@@ -54,7 +54,18 @@
                 <label class="text-inverse" for="Publishedat">Published at</label>
                 <input type="date" class="form-control" name="publishedat" id="Publishedat" placeholder="Published at" required>
               </div>
-<div class="row">
+
+              <div class="form-group">
+                <label class="text-inverse" for="Publishedat">Prix</label>
+                <input type="text" class="form-control" name="Prix" id="Prix" placeholder="Prix" required>
+              </div>
+
+              <div class="form-group">
+                <label class="text-inverse" for="Publishedat">Quantite au Stock</label>
+                <input type="text" class="form-control" name="QStock" id="QStock" placeholder="Quantite au Stock" required>
+              </div>
+
+          <div class="row">
             <div class="col-lg-12 col-sm-12 col-12 text-center">
                 <button class="bntStyle"  name="Add" type="submit">Add</button>
             </div>

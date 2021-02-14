@@ -6,17 +6,20 @@ include('db.php');
 $title = $_POST['Title'];
 $auteur = $_POST['Author'];
 $publishedat = $_POST['publishedat'];
+$prix = $_POST['Prix'];
+$Qstock = $_POST['QStock'];
 $image = addslashes($_FILES["upd_img"]['name']);
 
 
-if($title=="" || $auteur=="" || $publishedat=="" || $image==""  ){
+
+if($title=="" || $auteur=="" || $publishedat=="" || $image=="" || $prix=="" || $Qstock==""  ){
 $_SESSION['status'] = "Pardon!! Veuillez remplire tous les champs!";
 header ('location: ../addbook.php');
 return;
 }
 
-$query = "insert into books (title,auteur,image,publishedat)
-values ('$title','$auteur','$image','$publishedat')";
+$query = "insert into books (title,auteur,image,publishedat,Prix,QStock)
+values ('$title','$auteur','$image','$publishedat','$prix','$Qstock')";
 $query_run = mysqli_query($connection, $query);
 
 	if($query_run){

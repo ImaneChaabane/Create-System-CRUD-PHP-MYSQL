@@ -48,9 +48,11 @@
                         <tr class="trBg">
                             <th>Title</th>
                             <th>Author</th>
-                            <th>image</th>
-                            <th>published at</th>
-                            <th>action</th>
+                            <th>Image</th>
+                            <th>Published at</th>                          
+                            <th>Prix</th>
+                            <th width="20">Quantité</th>
+                            <th>Action</th>
                         </tr>
                         <?php
           include('function/read.php');

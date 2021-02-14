@@ -12,7 +12,7 @@
 <body>
         <?php
          include('function/db.php');
-        include('header.php');
+        include('header1.php');
       include('function/function.php');
      ?>
         <!--start of form to add books-->
@@ -62,6 +62,16 @@
                <div class="form-group">
                 <label class="text-inverse" for="Publishedat">Published at</label>
                 <input type="date" class="form-control" name="publishedat" id="Publishedat" placeholder="Published at" value="<?php echo $row['publishedat']; ?>" required>
+              </div>
+              
+              <div class="form-group">
+                <label class="text-inverse" for="Publishedat">Prix</label>
+                <input type="text" class="form-control" name="Prix" id="Prix" value="<?php echo $row['Prix']; ?>"  placeholder="Prix" required>
+              </div>
+
+              <div class="form-group">
+                <label class="text-inverse" for="Publishedat">Quantite au Stock</label>
+                <input type="text" class="form-control" name="QStock" id="QStock" value="<?php echo $row['QStock']; ?>" placeholder="Quantite au Stock" required>
               </div>
 <div class="row">
             <div class="col-lg-12 col-sm-12 col-12 text-center">

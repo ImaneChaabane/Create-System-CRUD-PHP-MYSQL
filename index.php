@@ -12,12 +12,12 @@
     <?php include('header.php') ?>
     
 <div class=" main-container">
-    <section id="funnnels">
+    <section>
   <div class="container">
-    <div class="row padd">
+    <div class="row">
 
       <div class="col-sm-15 text-center">
-          <div class="wrap">
+          <div class="wrapIndex">
             <h3>WELCOME TO LIBRARY</h3>
           </div>
         <div class="clearfix"></div>

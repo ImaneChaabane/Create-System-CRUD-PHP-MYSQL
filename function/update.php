@@ -8,10 +8,12 @@ if(isset($_POST['Update']))
 $id = $_POST['edit_id'];
 $title = $_POST['title'];
 $auteur = $_POST['auteur'];
+$prix = $_POST['Prix'];
+$Qstock = $_POST['QStock'];
 $image = addslashes($_FILES["upd_img"]['name']);
 $publishedat = $_POST['publishedat'];
 
-if($title=="" || $auteur=="" || $publishedat=="" ){
+if($title=="" || $auteur=="" || $publishedat=="" || $prix=="" || $Qstock=="" ){
 $_SESSION['status'] = "Pardon!! Veuillez remplire tous les champs!";
 header ('location: ../books.php');
 return;
@@ -27,7 +29,7 @@ return;
 	}
 }
 
-    $query = " UPDATE books SET title = '$title' , auteur ='$auteur', 
+    $query = " UPDATE books SET title = '$title' , auteur ='$auteur', Prix = '$prix',QStock='$Qstock', 
     image = '$image',publishedat='$publishedat' WHERE ID = '$id'";
 
     $query_run = mysqli_query($connection,$query);

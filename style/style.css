@@ -1,4 +1,10 @@
-
+*{
+  margin: 0;
+  padding: 0;
+}
+body,html{
+  height: 100%;
+}
 .container {
   padding-top: 40px;
 }
@@ -6,7 +12,6 @@
 a h3 {
   margin-top: 0!important;
 }
-
 .col-sm-15 {
  
   margin: 1%;
@@ -15,7 +20,7 @@ a h3 {
   position: relative;
 }
 
-.col-sm-15 .wrap:before {
+.col-sm-15 .wrapIndex:before {
   content: '';
   position: absolute;
   width: 30px;
@@ -26,7 +31,7 @@ a h3 {
   border-right: 10px solid #6001ff;
 }
 
-.col-sm-15 .wrap:after {
+.col-sm-15 .wrapIndex:after {
   content: '';
   position: absolute;
   width: 30px;
@@ -47,9 +52,8 @@ a h3 {
 }
 
 .wrap {
-
-   color:#6001ff;
-   margin-top: 15px;
+   color:white;
+   margin-top: 35px;
   padding: 15px;
   position: absolute;
   top: 50%;
@@ -58,9 +62,18 @@ a h3 {
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 }   
-.wrap h3{
-  padding: 2px 15px;
-}
+.wrapIndex {
+  color:#6001ff;
+  margin-top: 35px;
+ padding: 15px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ -ms-transform: translateX(-50%) translateY(-50%);
+ -webkit-transform: translate(-50%,-50%);
+ transform: translate(-50%,-50%);
+}   
+
 
 
 .navbar-toggler{
@@ -88,7 +101,7 @@ a:hover{
     color: white;
 }
 
-.ilinetext {
+.titre {
   display: flex;
   justify-content: space-between;
   width: 95%;
@@ -150,28 +163,26 @@ th{
 .head{
   font-size: 20px;
     font-weight: bold;
-    color: red;
+    color:#6001ff;
     text-align: center;
 }
-button.btnStyle{
+.btnStyle{
   border: none;
   width: 100px;
   font-size: 12px;
   font-weight: bold;
   color: white;
-  background: red;
+  background: #6001ff;
   height: 32px; 
 }
 .body{
   font-weight: bold;
   text-align: center;
+
 }
 
-.edit_Book{
-  float: left;
-}
+
 .delete_btn{
-  float: right;
   padding: 8px 15px;
 }
 
@@ -195,3 +206,31 @@ button.btnStyle{
   }
   }
 
+.wrap h3{
+    padding: 2px 15px;
+      font-size: 80px;
+      font-weight: bold;
+  }
+.wrap input[type=text]{
+  height: 38px;
+  width: 380px;
+  border: none;
+  background: #d8cccc;
+  text-align: center;
+  font-size: small;
+
+}
+.card-img-top{
+  max-height: 250px;
+  width: auto;
+  border: 2px black solid;
+  margin: auto;
+
+}
+.card{
+  border: none;
+}
+.card-title{
+  text-align: center;
+  margin: 20px;
+}
